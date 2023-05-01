@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color"
+    android:scrollbarTrackVertical="@drawable/color"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/resim"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_alignLeft="@+id/resim"
+            android:layout_alignTop="@+id/resim"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginTop="-4dp"
+            android:src="@drawable/logo"
+            tools:ignore="NotSibling"
+
+            />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="139dp"
+            android:layout_height="198dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="24dp"
+            android:background="#A0A6A6"
+            android:gravity="center"
+            android:text="YOUR LİFE YOUR STORY"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pano"
+        android:layout_width="316dp"
+        android:layout_height="467dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/shape">
+
+        <EditText
+            android:id="@+id/editTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Kullanıcı Adı"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            android:drawableRight="@drawable/baseline_person_24"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="90dp"
+            android:ems="10"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:drawableRight="@drawable/baseline_password_24"/>
+
+        <Button
+            android:id="@+id/btngir"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="208dp"
+            android:background="@drawable/myrip2"
+            android:backgroundTint="#C2185B"
+            android:text="Giriş"
+            app:backgroundTint="#C2185B" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="145dp"
+            android:background="@drawable/myrip"
+            android:text="Parolamı Unuttum"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:backgroundTint="#FFA000" />
+
+        <Button
+            android:id="@+id/btnekle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="260dp"
+            android:text="Ekle"
+            android:onClick="sqlprog"
+            android:backgroundTint="#4B6868"/>
+
+        <TextView
+            android:id="@+id/showtxt"
+            android:layout_width="259dp"
+            android:layout_height="118dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="320dp"
+            android:textSize="20sp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
